@@ -1,0 +1,125 @@
+/* Estilo da seção ofertaInicio */
+.ofertaInicio {
+    background-color: var(--color-background);
+    background-image: url('/images/BG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.ofertaInicio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.ofertaInicio {
+    animation: moveBackground 30s linear infinite;
+}
+
+.text-content h2 {
+    font-family: 'Junge', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--color-text);
+    margin-bottom: 40px;
+}
+
+.ofertaInicio h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.highlight {
+    display: inline;
+}
+
+.color-orange {
+    color: var(--color-primary);
+}
+
+.color-black {
+    color: var(--color-text);
+}
+
+.color-yellow {
+    color: var(--color-secondary);
+}
+
+.text-content h3 {
+    font-family: 'Junge', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: var(--color-text);
+    margin-bottom: 40px;
+}
+
+.text-content {
+    order: 1;
+    color: #ffffff;
+    text-align: left;
+}
+
+.image-container {
+    order: 2;
+    text-align: center;
+}
+
+.button-enviar {
+    width: 527px;
+    height: 56px;
+    border-radius: 5px 25px 5px 25px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
+    margin-top: 53px;
+}
+
+.button-enviar:hover {
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-enviar img {
+    width: 24px;
+    height: 23px;
+    vertical-align: middle;
+    margin-left: 10px;
+}

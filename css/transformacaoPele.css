@@ -1,0 +1,111 @@
+.transformacaoPele {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FAF6F0; /* Cor de fundo da seção */
+}
+
+.transformacaoPele h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 60px;
+    font-weight: 600; /* Semibold */
+    color: #E35909; /* Cor do título */
+    margin-bottom: 44px; /* Espaço abaixo do h1 */
+}
+
+.rectangles-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espaço entre as colunas */
+    margin-bottom: 40px; /* Espaço abaixo dos retângulos */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espaço entre os retângulos */
+}
+
+h2 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000000; /* Cor do título fora do retângulo */
+    margin-bottom: 8px; /* Espaço entre o h2 e o retângulo */
+}
+
+.rectangle {
+    background: linear-gradient(90deg, #E35909, #EDAB45); /* Gradiente linear */
+    padding: 30px;
+    border-radius: 23px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 510.16px; /* Largura dos retângulos */
+    height: 266.14px; /* Altura dos retângulos */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: left; /* Alinhamento do texto dentro dos retângulos */
+}
+
+.rectangle-content {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
+    justify-content: flex-start; /* Garante que o conteúdo fique alinhado à esquerda */
+    gap: 15px; /* Espaço entre a imagem e o texto */
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
+}
+
+.rectangle-content img {
+    width: auto; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+}
+
+.rectangle-content p {
+    font-family: 'Junge', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF; /* Texto branco para destacar no fundo gradiente */
+    margin: 0; /* Remove margens para garantir alinhamento */
+    text-align: left; /* Garante que o texto dentro do retângulo fique à esquerda */
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza o botão */
+}
+
+.transformacaoPele-button {
+    width: 527px;
+    height: 56px;
+    border-radius: 5px 25px 5px 25px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
+    margin-top: 53px;
+}
+
+.transformacaoPele-button:hover {
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-enviar img {
+    width: 24px;
+    height: 23px;
+    vertical-align: middle;
+    margin-left: 10px;
+}

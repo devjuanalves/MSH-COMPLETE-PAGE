@@ -1,0 +1,13 @@
+:root {
+    --color-primary: #e35909;
+    --color-secondary: #edab45;
+    --color-text: #000000;
+    --color-background: #faf6f0;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

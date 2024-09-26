@@ -1,0 +1,45 @@
+.solucaoEficaz {
+    padding: 50px 0;
+    background-image: url(/Images/BG\ 02.png);
+    background-color: #FAF6F0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.solucaoEficaz-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide o grid em duas colunas iguais */
+    align-items: center; /* Alinha verticalmente ao centro */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o grid */
+    gap: 30px; /* Espaçamento entre colunas */
+    padding: 50px 0; /* Espaçamento interno */
+}
+
+.solucaoEficaz-text {
+    font-family: 'Junge', sans-serif;
+    color: #000000;
+}
+
+.solucaoEficaz h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 48px; /* Tamanho do h1 */
+    color: #E35909; /* Cor do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.solucaoEficaz p {
+    font-size: 22px; /* Tamanho do texto do parágrafo */
+    line-height: 1.6;
+}
+
+.solucaoEficaz-image img {
+    width: 100%; /* Garante que a imagem ocupe o espaço da coluna */
+    border-radius: 8px; /* Borda levemente arredondada */
+}
+
+
+.highlight-black {
+    color: #000000; /* Cor preta */
+}

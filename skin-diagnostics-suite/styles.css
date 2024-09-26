@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo do header inicio */
+
+.header {
+    background-color: #e35909;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-left, .menu-right {
+    display: flex; /* Usa flexbox para alinhar os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.menu-left a, .menu-right a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px; /* Tamanho da fonte ajustado para 20px */
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto Regular */
+    margin-right: 30px; 
+    align-items: center; /* Alinha verticalmente o texto e o ícone */
+    display: flex; /* Alinha o texto e o ícone horizontalmente */
+    transition: color 0.3s ease, transform 0.3s ease; /* Suaviza a transição da cor e transformação */
+}
+
+.menu-left a:hover, .menu-right a:hover {
+    color: #edab45; /* Cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+.menu-left a:hover .icon, .menu-right a:hover .icon {
+    filter: brightness(0) invert(1); /* Ajuste a cor dos ícones (branqueia o ícone) */
+}
+
+
+
+/* Estilo para a logo */
+.logo img {
+    max-width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+    display: block;
+    margin: 0 auto;
+}
+
+/* estilo do header fim */
+
+
+/* Seção Hero inicio */
+.hero {
+    background-color: #FAF6F0; /* Cor de fundo */
+    background-image: url(/images/BG.png); /* Imagem de fundo */
+    background-size: cover; /* Garante que a imagem cubra a seção inteira */
+    background-position: center; /* Centraliza a imagem no background */
+    background-repeat: repeat; /* Permite a repetição da imagem para criar um efeito de movimento contínuo */
+    padding: 50px 0;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    position: relative; /* Para permitir o uso de pseudo-elementos */
+    overflow: hidden; /* Garante que qualquer deslocamento não visível não afete o layout */
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0; /* Posição inicial */
+    }
+    100% {
+        background-position: 100% 100%; /* Posição final para a animação */
+    }
+}
+
+.hero {
+    animation: moveBackground 30s linear infinite; /* Aplica a animação contínua */
+}
+
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de igual largura */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px;
+    
+    /* Usamos a propriedade order para inverter o conteúdo */
+}
+
+.text-content {
+    order: 2; /* Coloca o texto na segunda coluna */
+    color: #ffffff;
+    text-align: left;
+}
+
+.image-container {
+    order: 1; /* Coloca a imagem na primeira coluna */
+    text-align: center;
+}
+
+.text-content h2 {
+    color: #000000;
+    font-size: 36px; /* Tamanho da fonte atualizado */
+    margin-bottom: 39px;
+    font-family: 'Junge', sans-serif; /* Fonte Junge */
+}
+
+.text-content h1 {
+    font-size: 3.5em;
+    font-weight: 600; /* Peso semibold */
+    margin-bottom: 20px;
+    color: #E35909;
+    font-family: 'League Spartan', sans-serif; /* Fonte atualizada */
+}
+
+.highlight {
+    color: #000000; /* Cor preta na headline */
+}
+
+.text-content h3 {
+    font-weight: 500; /* Peso semibold */
+    color: #000000;
+    font-size: 25px; /* Tamanho da fonte atualizado */
+    margin-bottom: 39px;
+    font-family: 'Junge', sans-serif; /* Fonte Junge */
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button-enviar,
+.button-tirar {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px; /* Borda arredondada de 8px */
+    font-size: 32px; /* Tamanho da fonte atualizado */
+    font-weight: 600; /* Peso semibold */
+    cursor: pointer;
+    background: linear-gradient(90deg, #e35909, #edab45);
+    color: #ffffff;
+    display: flex;
+    align-items: center; /* Alinha verticalmente o texto e o ícone */
+    justify-content: center; /* Centraliza o conteúdo dentro do botão */
+    gap: 10px; /* Espaço entre o texto e o ícone */
+    text-align: center; /* Garante que o texto e o ícone fiquem centralizados */
+    font-family: 'League Spartan', sans-serif; /* Fonte atualizada */
+    min-width: 200px; /* Define um tamanho mínimo para os botões */
+    height: 60px; /* Define uma altura fixa para os botões */
+    position: relative; /* Necessário para o efeito de sombra */
+    overflow: hidden; /* Garante que o efeito de sombra não ultrapasse o botão */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+.button-enviar:hover,
+.button-tirar:hover {
+    background: linear-gradient(90deg, #edab45, #e35909);
+    transform: scale(1.05); /* Levemente aumenta o tamanho do botão */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao redor do botão */
+}
+
+.button-enviar:before,
+.button-tirar:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0) 80%);
+    transition: opacity 0.4s ease;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 0; /* Coloca o efeito de brilho abaixo do texto e ícone */
+}
+
+.button-enviar:hover:before,
+.button-tirar:hover:before {
+    opacity: 1; /* Mostra o efeito de brilho quando o botão é hovered */
+}
+
+.button-enviar img,
+.button-tirar img {
+    width: 35px; /* Ajuste o tamanho do ícone se necessário */
+    height: auto;
+    vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
+}
+
+
+
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: -82px; /* Adiciona espaçamento à esquerda da imagem */
+}
+
+
+
+/* Seção Hero fim */
