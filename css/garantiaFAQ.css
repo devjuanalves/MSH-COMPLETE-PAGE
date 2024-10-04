@@ -1,0 +1,136 @@
+/* Garantia FAQ Section */
+.garantiaFAQ {
+    background: linear-gradient(to right, #E35909, #EDAB45); /* Fundo gradiente */
+    padding: 50px;
+    min-height: 100vh; /* Ocupar toda a altura da tela */
+    display: flex; /* Para alinhar o conteúdo verticalmente se necessário */
+    flex-direction: column; /* Alinhamento vertical */
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+
+/* FAQ Header */
+.faq-header {
+    display: flex;
+    align-items: flex-start; /* Alinhamento ao topo */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Container para h1 e p */
+.faq-text-container {
+    display: flex;
+    width: 1077px; /* Largura total desejada */
+    height: 150px; /* Altura total desejada */
+    justify-content: space-between; /* Distribui espaço entre h1 e p */
+    align-items: center; /* Alinhamento vertical */
+}
+
+/* Estilo do título */
+.faq-title {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: #ffffff;
+    margin: 0;
+    margin-right: 85px; /* Espaçamento de 85px entre h1 e p */
+}
+
+.faq-title .junge {
+    font-family: 'Junge', sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+/* Estilo do parágrafo à direita */
+.faq-right-text {
+    font-family: 'Junge', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 1.5;
+    width: 710px;  /* Define a largura */
+    height: auto; /* Altura automática para acomodar o texto completo */
+    margin: 0;
+}
+
+/* Subtítulo PERGUNTAS FREQUENTES */
+.faq-subtitle {
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 40px 0;
+    margin-top: 93px;
+    margin-bottom: 93px;
+}
+
+/* Accordion Container */
+/* Accordion Container */
+.accordion-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Accordion */
+.accordion {
+    background: linear-gradient(to right, #E35909, #EDAB45);
+    width: 528px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Permite que o conteúdo seja empilhado verticalmente */
+    padding: 15px; /* Padding no acordeão */
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s; /* Efeito suave na transição */
+}
+
+/* Estilo do título do acordeão */
+.accordion-header {
+    color: white;
+    font-family: 'League Spartan', sans-serif; /* Fonte do título */
+    font-size: 25px; /* Tamanho da fonte do título */
+    font-weight: 500; /* Peso semibold */
+    margin: 0; /* Remove margem */
+    display: flex; /* Flex para alinhar o conteúdo */
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* Imagem no cabeçalho do acordeão */
+.accordion-header img {
+    margin-right: 15px;
+}
+
+/* Estilo do parágrafo dentro do acordeão */
+.accordion-content {
+    max-height: 0; /* Inicia fechado */
+    overflow: hidden; /* Oculta o conteúdo */
+    transition: max-height 0.3s ease; /* Transição suave */
+    background: transparent; /* Fundo transparente para o conteúdo */
+}
+
+/* Parágrafo do conteúdo do acordeão */
+.accordion-content p {
+    color: #ffffff;
+    margin: 0; /* Remove margem */
+    font-family: 'League Spartan', sans-serif; /* Fonte do parágrafo */
+    font-size: 20px; /* Tamanho da fonte do parágrafo */
+    font-weight: 500; /* Peso semibold */
+}
+
+/* Ativo - Mostrar conteúdo do acordeão */
+.accordion.active .accordion-content {
+    max-height: 200px; /* Define uma altura máxima ao expandir */
+    padding: 15px 0; /* Ajuste o padding para o conteúdo */
+}
+
+/* Ajustes no comportamento dos acordeões */
+.accordion.active {
+    background: linear-gradient(to right, #E35909, #EDAB45); /* Manter a cor do fundo */
+}
+
+

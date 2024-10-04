@@ -1,0 +1,77 @@
+/* Remover o scroll no eixo X */
+body {
+    overflow-x: hidden;
+}
+
+/* Seção com background que ocupa toda a tela */
+.comMSHvsSemMSH {
+    position: relative;
+    height: 100vh; /* Ocupa 100% da altura da viewport */
+    width: 100vw;  /* Ocupa 100% da largura da viewport */
+    background: url('/Images/BG 03.png') no-repeat center center;
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Impede o scroll */
+}
+
+/* Contêiner para os dois retângulos */
+.glass-container {
+    position: relative;
+    width: 100%; /* Ocupa 100% da largura disponível */
+    height: 100%; /* Ocupa 100% da altura disponível */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo dos retângulos com efeito de vidro */
+.glass-box {
+    width: 397px;
+    height: 294px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Transparência */
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: absolute;
+}
+
+/* Ajustando as posições exatas dos retângulos conforme solicitado, usando vw e vh */
+.glass-box-1 {
+    left: calc(50% + 312px); /* 862px em relação ao centro */
+    top: calc(50% - 214px); /* 286px em relação ao centro */
+}
+
+.glass-box-2 {
+    left: calc(50% - 478px); /* 184px em relação ao centro */
+    top: calc(50% + 214px); /* 624px em relação ao centro */
+}
+
+/* Itens dentro dos retângulos */
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item img {
+    width: 19px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.item p {
+    font-family: 'Junge', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.glass-box h2 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+}

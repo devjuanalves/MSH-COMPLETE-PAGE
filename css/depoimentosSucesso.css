@@ -1,0 +1,104 @@
+.depoimentosSucesso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste conforme necessário */
+    background-color: #FAF6F0; /* Cor de fundo */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    width: 100%; /* Ocupa toda a largura */
+    max-width: 1200px; /* Largura máxima para centralizar */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o texto à esquerda */
+    padding: 20px; /* Espaçamento */
+}
+
+.text-container h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 60px;
+    font-weight: 600; /* Semi-bold */
+    color: var(--color-primary); /* Cor padrão do texto */
+    line-height: 1.2; /* Ajuste da altura da linha para melhor espaçamento */
+}
+
+.black-text {
+    color: black; /* Aplica cor preta às palavras específicas */
+}
+
+
+.text-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.photos-container {
+    display: flex; /* Alterado para flex */
+    flex-wrap: wrap; /* Permite que as fotos quebrem para a próxima linha */
+    justify-content: flex-start; /* Alinha as fotos à esquerda */
+    gap: 10px; /* Espaçamento horizontal */
+}
+
+.photo-item {
+    width: calc(50% - 10px); /* Cada foto ocupa metade da coluna menos o espaço */
+    height: 150px; /* Ajuste conforme necessário */
+    margin-bottom: 250px; /* Aumentado para maior espaçamento vertical entre as fotos */
+}
+
+
+.pele-radiante {
+    width: 300px;
+    height: 56px;
+    border-radius: 5px 25px 5px 25px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
+    margin-top: 53px;
+}
+
+.pele-radiante:hover {
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pele-radiante img {
+    width: 24px;
+    height: 23px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Animação do movimento contínuo */
+.photos-container {
+    animation: slide 10s linear infinite; /* Animação contínua */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-150px); /* Ajuste para o tamanho total das fotos */
+    }
+}

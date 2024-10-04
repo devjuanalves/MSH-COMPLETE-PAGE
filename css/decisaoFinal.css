@@ -1,0 +1,154 @@
+.decisaoFinal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #FAF6F0; /* Cor de fundo */
+}
+
+.section-title {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 60px;
+    color: #E35909;
+    text-align: center;
+    margin-bottom: 40px; /* Espaçamento entre o título e o grid */
+}
+
+.black-text {
+    color: black; /* Cor preta */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    gap: 50px; /* Espaço entre as colunas */
+    width: 100%;
+    max-width: 1200px;
+}
+
+.left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#E87D23, #EDAB45); /* Gradiente linear */
+    width: 530px; /* Largura do retângulo */
+    height: 673px; /* Altura do retângulo */
+    padding: 40px;
+    border-radius: 15px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+    outline: 3px solid transparent; /* Define uma borda transparente */
+    background-clip: padding-box; /* Garante que a borda não sobreponha o conteúdo */
+}
+
+/* Borda com gradiente */
+.left-container::before {
+    content: ''; /* Necessário para criar um pseudo-elemento */
+    position: absolute; /* Posiciona o pseudo-elemento em relação ao container */
+    top: -3px; /* Move para cima da borda */
+    left: -3px; /* Move para a esquerda da borda */
+    right: -3px; /* Move para a direita da borda */
+    bottom: -3px; /* Move para baixo da borda */
+    border-radius: 15px; /* Mantém a borda arredondada */
+    background: linear-gradient(45deg, #E87D23, #EDAB45); /* Gradiente para a borda */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+
+
+.content-box {
+    display: flex; /* Usar flexbox para alinhar itens */
+    flex-direction: column; /* Direção da coluna */
+    justify-content: space-between; /* Espaçar os itens uniformemente */
+    height: 100%; /* Garantir que o conteúdo ocupe toda a altura do container */
+    text-align: center; /* Centralizar o texto */
+}
+
+
+
+.content-box p {
+    color: white;
+    font-family: 'Junge', sans-serif;
+    font-size: 30px; /* Tamanho do texto do parágrafo */
+    margin-bottom: 10px;
+}
+
+.content-box h1 {
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 95px; /* Tamanho do título */
+    margin-bottom: 20px;
+}
+
+.content-box h2 {
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 45px; /* Tamanho do subtítulo */
+    margin-bottom: 20px; /* Espaçamento entre o h2 e o próximo item */
+}
+
+.content-box button {
+    margin-top: 20px;
+    width: 502px; /* Largura do botão */
+    height: 87px; /* Altura do botão */
+    background: linear-gradient(to right, #1BE309, #0DB40D); /* Gradiente linear */
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'League Spartan', sans-serif; /* Fonte do texto */
+    font-size: 32px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    border-radius: 8px; /* Opcional: arredondar os cantos do botão */
+    text-align: center; /* Centralizar o texto */
+    padding: 10px; /* Espaçamento interno */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse */
+.content-box button:hover {
+    transform: translateY(-5px); /* Move o botão para cima */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Sombra ao redor do botão */
+}
+
+.content-box img {
+    margin-top: 20px;
+    max-width: 100%; /* Garantir que a imagem não exceda a área do retângulo */
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    font-family: 'Junge', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px; /* Espaçamento entre os itens */
+    position: relative; /* Necessário para garantir que a linha seja posicionada corretamente */
+    padding-bottom: 10px; /* Espaçamento extra abaixo de cada item */
+}
+
+.list-item img {
+    width: 19px; /* Ajustar o tamanho das imagens */
+    height: 18px;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.list-item p {
+    flex-grow: 1; /* Faz o parágrafo ocupar o espaço restante */
+    margin: 0;
+}
+
+/* Linha separadora */
+.separator-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(#E87D23, #EDAB45); /* Gradiente linear */
+}
