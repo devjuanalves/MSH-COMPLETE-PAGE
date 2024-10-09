@@ -11,3 +11,1388 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Estilo do header */
+.header {
+    background-color: var(--color-primary);
+    padding: 10px 0;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-left, .menu-right {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-left a, .menu-right a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 30px;
+    align-items: center;
+    display: flex;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-left a:hover, .menu-right a:hover {
+    color: var(--color-secondary);
+    transform: scale(1.1);
+}
+
+.menu-left a:hover .icon, .menu-right a:hover .icon {
+    filter: brightness(0) invert(1);
+}
+
+.logo img {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.ofertaInicio-001 {
+    background-color: var(--color-background);
+    background-image: url('/images/BG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    animation: moveBackground-001 30s linear infinite; /* Aplica a animação ao background */
+}
+
+@keyframes moveBackground-001 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.ofertaInicio-container-001 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.text-content-001 h2 {
+    font-family: 'Junge', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--color-text);
+    margin-bottom: 40px;
+}
+
+.ofertaInicio-001 h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.highlight-001 {
+    display: inline;
+}
+
+.color-orange-001 {
+    color: var(--color-primary);
+}
+
+.color-black-001 {
+    color: var(--color-text);
+}
+
+.color-yellow-001 {
+    color: var(--color-secondary);
+}
+
+.text-content-001 h3 {
+    font-family: 'Junge', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: var(--color-text);
+    margin-bottom: 40px;
+}
+
+.text-content-001 {
+    order: 1;
+    color: #ffffff;
+    text-align: left;
+}
+
+.image-container-001 {
+    order: 2;
+    text-align: center;
+}
+
+.button-enviar-001 {
+    width: 527px;
+    height: 56px;
+    border-radius: 5px 25px 5px 25px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
+    margin-top: 53px;
+}
+
+.button-enviar-001:hover {
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-enviar-001 img {
+    width: 24px;
+    height: 23px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.frustracoes-002 {
+    background-color: var(--color-background);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.frustracoes-container-002 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frustracoes-container-002 h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: #E35909;
+    margin-bottom: 40px;
+}
+
+.frustracoes-container-002 h1 .highlight-enfrentou-002,
+.frustracoes-container-002 h1 .highlight-frustacoes-002 {
+    color: #000000;
+}
+
+/* Estilo para os quadrados */
+.squares-container-002 {
+    overflow: hidden;
+    width: 1100px; /* Largura para acomodar todos os quadrados */
+    margin: 0 auto;
+}
+
+.squares-wrapper-002 {
+    display: flex;
+    gap: 27px; /* Espaçamento entre os quadrados */
+    animation: move-left-002 20s linear infinite;
+}
+
+.square-002 {
+    width: 248px;
+    height: 156px;
+    border-radius: 23px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Garante que o quadrado não encolha */
+    box-sizing: border-box; /* Inclui padding no cálculo */
+}
+
+.square-002 p {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+    font-size: 18px; /* Tamanho da fonte ajustado */
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box; /* Garante que o padding não estoure o quadrado */
+}
+
+/* Animação de movimento contínuo */
+@keyframes move-left-002 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.desejo-no-espelho-003 {
+    background-color: var(--color-background);
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desejo-container-003 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.desejo-text-content-003 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.desejo-no-espelho-title-003 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: #E35909;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.desejo-item-003 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 51px;
+}
+
+.desejo-icon-003 {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.desejo-item-003 p {
+    font-family: 'Junge', sans-serif;
+    font-size: 23px;
+    color: #000000;
+    margin: 0;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.desejo-button-003 {
+    width: 170px;
+    height: 40px;
+    border-radius: 65px;
+    background: linear-gradient(90deg, #E35909, #EDAB45);
+    color: #ffffff;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 0;
+    align-self: flex-start;
+}
+
+.desejo-button-003:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.button-icon-003 {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.desejo-button-003:hover .button-icon-003 {
+    transform: translateX(10px);
+}
+
+.desejo-image-container-003 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desejo-image-container-003 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.highlight-laranja-003 {
+    color: #E35909; /* Cor laranja */
+}
+
+.highlight-preto-003 {
+    color: #000000; /* Cor preta */
+}
+
+.oQueEMSH-004 {
+    text-align: center; /* Centraliza o texto do h1 e do p */
+    padding: 50px 0; /* Espaçamento em cima e embaixo */
+    background-color: #FAF6F0; /* Cor de fundo da seção */
+}
+
+.oQueEMSH-title-004 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 60px; /* Tamanho do h1 */
+    font-weight: 600; /* Semibold */
+    color: #E35909; /* Cor do título */
+    margin-bottom: 61px; /* Espaço abaixo do título */
+}
+
+.highlight-004 {
+    color: #000000; /* Cor preta */
+}
+
+.oQueEMSH-description-004 {
+    font-family: 'Junge', sans-serif;
+    font-size: 25px; /* Tamanho do texto */
+    color: #000000; /* Cor do texto */
+    margin-bottom: 61px; /* Espaço abaixo do texto */
+}
+
+.oQueEMSH-item-004 {
+    display: flex;
+    align-items: center; /* Alinha o ícone e o texto */
+    margin-bottom: 17px; /* Espaçamento entre o item e a linha */
+}
+
+.line-004 {
+    width: 357px; /* Largura da linha */
+    height: 2px; /* Altura da linha */
+    background-color: #E35909; /* Cor da linha */
+    margin: 10px 0; /* Espaçamento acima e abaixo da linha */
+}
+
+.oQueEMSH-grid-004 {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    max-width: 1200px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.oQueEMSH-image-004 {
+    flex: 1; /* Permite que a imagem ocupe uma parte do grid */
+    text-align: left; /* Alinhamento da imagem à esquerda */
+}
+
+.oQueEMSH-items-004 {
+    flex: 2; /* Permite que os itens ocupem mais espaço */
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
+}
+
+.oQueEMSH-item-004 {
+    display: flex;
+    align-items: center; /* Alinha o ícone e o texto */
+    margin-bottom: 20px; /* Espaçamento entre os itens */
+    font-family: 'Junge', sans-serif;
+    font-size: 25px; /* Tamanho do texto */
+}
+
+.oQueEMSH-item-004 img {
+    width: 24px; /* Tamanho do ícone */
+    height: 24px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.oQueEMSH-grid-004 {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens ao topo */
+    justify-content: center; /* Centraliza horizontalmente */
+    max-width: 1200px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.oQueEMSH-button-container-004 {
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+    margin-top: 20px; /* Espaço acima do botão */
+}
+
+.oQueEMSH-button-004:hover {
+    transform: scale(1.1); /* Aumenta o botão ao passar o mouse (maior que antes) */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Sombra ao hover (maior que antes) */
+}
+
+.button-icon-004 {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    width: 20px; /* Largura do ícone */
+    height: 20px; /* Altura do ícone */
+    transition: transform 0.3s ease; /* Transição suave para a animação */
+}
+
+.oQueEMSH-button-004:hover .button-icon-004 {
+    transform: translateX(10px); /* Move a seta mais para a direita ao hover */
+}
+
+.oQueEMSH-item-004 p {
+    text-align: justify; /* Justifica o texto dos itens */
+}
+
+
+/* Estilos da seção isolada com identificador único */
+.transformacaoPele-005 {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FAF6F0; /* Cor de fundo da seção */
+}
+
+.transformacaoPele-005 h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 60px;
+    font-weight: 600; /* Semibold */
+    color: #E35909; /* Cor do título */
+    margin-bottom: 44px; /* Espaço abaixo do h1 */
+}
+
+.rectangles-container-005 {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espaço entre as colunas */
+    margin-bottom: 40px; /* Espaço abaixo dos retângulos */
+}
+
+.column-005 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espaço entre os retângulos */
+}
+
+h2 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000000; /* Cor do título fora do retângulo */
+    margin-bottom: 8px; /* Espaço entre o h2 e o retângulo */
+}
+
+.rectangle-005 {
+    background: linear-gradient(90deg, #E35909, #EDAB45); /* Gradiente linear */
+    padding: 30px;
+    border-radius: 23px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 510.16px; /* Largura dos retângulos */
+    height: 266.14px; /* Altura dos retângulos */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: left; /* Alinhamento do texto dentro dos retângulos */
+}
+
+.rectangle-content-005 {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
+    justify-content: flex-start; /* Garante que o conteúdo fique alinhado à esquerda */
+    gap: 15px; /* Espaço entre a imagem e o texto */
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
+}
+
+.rectangle-content-005 img {
+    width: auto; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+}
+
+.rectangle-content-005 p {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF; /* Texto branco para destacar no fundo gradiente */
+    margin: 0; /* Remove margens para garantir alinhamento */
+    text-align: left; /* Garante que o texto dentro do retângulo fique à esquerda */
+}
+
+.button-container-005 {
+    display: flex;
+    justify-content: center; /* Centraliza o botão */
+}
+
+.transformacaoPele-button-005 {
+    width: 527px;
+    height: 56px;
+    border-radius: 5px 25px 5px 25px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
+    margin-top: 53px;
+}
+
+.transformacaoPele-button-005:hover {
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-enviar img {
+    width: 24px;
+    height: 23px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+.solucaoEficaz-005 {
+    padding: 50px 0;
+    background-image: url(/Images/BG\ 02.png);
+    background-color: #FAF6F0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.solucaoEficaz-grid-005 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide o grid em duas colunas iguais */
+    align-items: center; /* Alinha verticalmente ao centro */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o grid */
+    gap: 30px; /* Espaçamento entre colunas */
+    padding: 50px 0; /* Espaçamento interno */
+}
+
+.solucaoEficaz-text-005 {
+    font-family: 'Junge', sans-serif;
+    color: #000000;
+}
+
+.solucaoEficaz-005 h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 48px; /* Tamanho do h1 */
+    color: #E35909; /* Cor do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.solucaoEficaz-005 p {
+    font-size: 22px; /* Tamanho do texto do parágrafo */
+    line-height: 1.6;
+}
+
+.solucaoEficaz-image-005 img {
+    width: 100%; /* Garante que a imagem ocupe o espaço da coluna */
+    border-radius: 8px; /* Borda levemente arredondada */
+}
+
+.highlight-black-005 {
+    color: #000000; /* Cor preta */
+}
+
+.testeDePele-006 {
+    background-color: #1E1E1E; /* Cor de fundo */
+    width: 100%;
+    height: 512px; /* Altura da sessão */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.testeDePele-container-006 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide o grid em duas colunas iguais */
+    max-width: 1440px; /* Define a largura máxima da sessão */
+    width: 100%;
+    height: 100%;
+    align-items: center; /* Centraliza verticalmente os itens do grid */
+    padding: 0 20px; /* Espaçamento interno */
+}
+
+/* Imagem à esquerda */
+.testeDePele-image-006 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Garante que a imagem se ajuste à sua área */
+}
+
+/* Conteúdo à direita */
+.testeDePele-content-006 {
+    color: #FFFFFF; /* Texto branco */
+    padding-left: 40px; /* Espaçamento entre a imagem e o conteúdo */
+}
+
+.testeDePele-content-006 h1 {
+    color: #E35909; /* Cor laranja para o h1 */
+    font-family: 'League Spartan', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: right; /* Alinha o texto à direita */
+}
+
+.texto-branco-006 {
+    color: #ffffff; /* Cor branca para as palavras específicas */
+}
+
+.testeDePele-content-006 p {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: right; /* Alinha o texto à direita */
+    font-weight: 400; /* Peso da fonte atualizado */
+}
+
+/* Botão com o estilo de "button-enviar" */
+.button-testeDePele-006 {
+    width: 476px; /* Largura do botão */
+    height: 56px; /* Altura do botão */
+    border-radius: 8px; /* Bordas arredondadas */
+    background: linear-gradient(90deg, #0DB40D, #0DB40D); /* Gradiente de fundo */
+    font-family: 'League Spartan', sans-serif; /* Fonte */
+    font-weight: 500; /* Peso da fonte */
+    font-size: 32px; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    display: flex; /* Para alinhamento do conteúdo */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Centraliza o texto */
+    gap: 10px; /* Espaçamento entre texto e ícone */
+    padding: 0; /* Sem padding */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor pointer ao passar o mouse */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Para posicionamento relativo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+    white-space: nowrap; /* Impede quebra de linha */
+    margin-top: 53px; /* Espaço acima do botão */
+    margin-left: auto; /* Alinha o botão à direita */
+}
+
+.button-testeDePele-006:hover {
+    background: linear-gradient(90deg, #0DB40D, #0DB40D); /* Gradiente ao hover */
+    transform: scale(1.05); /* Efeito de zoom */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra ao hover */
+}
+
+.button-testeDePele-006 img {
+    width: 24px; /* Largura do ícone */
+    height: 23px; /* Altura do ícone */
+    vertical-align: middle; /* Alinhamento vertical */
+    margin-left: 10px; /* Margem à esquerda do ícone */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Seção com background que ocupa toda a tela */
+.comMSHvsSemMSH-007 {
+    position: relative;
+    height: 100vh; /* Ocupa 100% da altura da viewport */
+    width: 100vw;  /* Ocupa 100% da largura da viewport */
+    background: url('/Images/BG 03.png') no-repeat center center;
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Impede o scroll */
+}
+
+/* Contêiner para os dois retângulos */
+.glass-container-007 {
+    position: relative;
+    width: 100%; /* Ocupa 100% da largura disponível */
+    height: 100%; /* Ocupa 100% da altura disponível */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo dos retângulos com efeito de vidro */
+.glass-box {
+    width: 397px;
+    height: 220px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Transparência */
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: absolute;
+}
+
+/* Ajustando as posições exatas dos retângulos conforme solicitado, usando vw e vh */
+.glass-box-1-007 {
+    left: calc(50% + 312px); /* 862px em relação ao centro */
+    top: calc(50% - 214px); /* 286px em relação ao centro */
+}
+
+.glass-box-2-007 {
+    left: calc(50% - 478px); /* 184px em relação ao centro */
+    top: calc(50% + 214px); /* 624px em relação ao centro */
+}
+
+/* Itens dentro dos retângulos */
+.item-007 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item-007 img {
+    width: 19px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.item-007 p {
+    font-family: 'Junge', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.glass-box-007 h2 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.resultadosReais {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FAF6F0; /* Cor de fundo da seção */
+}
+
+.resultadosReais h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 60px;
+    font-weight: 600; /* Semibold */
+    color: #E35909; /* Laranja */
+    margin-bottom: 20px;
+}
+
+.resultadosReais p {
+    font-family: 'Junge', sans-serif;
+    font-size: 25px;
+    font-weight: 400; /* Regular */
+    color: #000000; /* Preto */
+    margin-bottom: 50px;
+}
+
+.retangulos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os retângulos */
+}
+
+.retangulo {
+    position: relative;
+    width: 345px;
+    height: 690px;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-before {
+    z-index: 1;
+}
+
+.image-after {
+    z-index: 2;
+    clip-path: inset(0 0 0 50%); /* Começa com metade da imagem 'Depois' oculta */
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #e0e0e07a;
+    z-index: 3;
+    cursor: ew-resize;
+}
+
+.arrow {
+    font-family: 'Junge', sans-serif;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(202, 201, 201, 0.7);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.depoimentosSucesso-009 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste conforme necessário */
+    background-color: #FAF6F0; /* Cor de fundo */
+}
+
+.grid-container-009 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    width: 100%; /* Ocupa toda a largura */
+    max-width: 1200px; /* Largura máxima para centralizar */
+}
+
+.text-container-009 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o texto à esquerda */
+    padding: 20px; /* Espaçamento */
+}
+
+.text-container-009 h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 60px;
+    font-weight: 600; /* Semi-bold */
+    color: var(--color-primary); /* Cor padrão do texto */
+    line-height: 1.2; /* Ajuste da altura da linha para melhor espaçamento */
+}
+
+.black-text-009 {
+    color: black; /* Aplica cor preta às palavras específicas */
+}
+
+.text-container-009 button {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.photos-container-009 {
+    display: flex; /* Alterado para flex */
+    flex-wrap: wrap; /* Permite que as fotos quebrem para a próxima linha */
+    justify-content: flex-start; /* Alinha as fotos à esquerda */
+    gap: 10px; /* Espaçamento horizontal */
+}
+
+.photo-item-009 {
+    width: calc(50% - 10px); /* Cada foto ocupa metade da coluna menos o espaço */
+    height: 150px; /* Ajuste conforme necessário */
+    margin-bottom: 250px; /* Aumentado para maior espaçamento vertical entre as fotos */
+}
+
+.pele-radiante-009 {
+    width: 300px;
+    height: 56px;
+    border-radius: 5px 25px 5px 25px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
+    margin-top: 53px;
+}
+
+.pele-radiante-009:hover {
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pele-radiante-009 img {
+    width: 24px;
+    height: 23px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Animação do movimento contínuo */
+.photos-container-009 {
+    animation: slide 10s linear infinite; /* Animação contínua */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-150px); /* Ajuste para o tamanho total das fotos */
+    }
+}
+
+.decisaoFinal-010 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #FAF6F0; /* Cor de fundo */
+}
+
+.section-title-010 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 60px;
+    color: #E35909;
+    text-align: center;
+    margin-bottom: 40px; /* Espaçamento entre o título e o grid */
+}
+
+.black-text {
+    color: black; /* Cor preta */
+}
+
+.grid-container-010 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    gap: 50px; /* Espaço entre as colunas */
+    width: 100%;
+    max-width: 1200px;
+}
+
+.left-container-010 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#E87D23, #EDAB45); /* Gradiente linear */
+    width: 530px; /* Largura do retângulo */
+    height: 673px; /* Altura do retângulo */
+    padding: 40px;
+    border-radius: 15px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+    outline: 3px solid transparent; /* Define uma borda transparente */
+    background-clip: padding-box; /* Garante que a borda não sobreponha o conteúdo */
+}
+
+/* Borda com gradiente */
+.left-container-010::before {
+    content: ''; /* Necessário para criar um pseudo-elemento */
+    position: absolute; /* Posiciona o pseudo-elemento em relação ao container */
+    top: -3px; /* Move para cima da borda */
+    left: -3px; /* Move para a esquerda da borda */
+    right: -3px; /* Move para a direita da borda */
+    bottom: -3px; /* Move para baixo da borda */
+    border-radius: 15px; /* Mantém a borda arredondada */
+    background: linear-gradient(45deg, #E87D23, #EDAB45); /* Gradiente para a borda */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+.content-box-010 {
+    display: flex; /* Usar flexbox para alinhar itens */
+    flex-direction: column; /* Direção da coluna */
+    justify-content: space-between; /* Espaçar os itens uniformemente */
+    height: 100%; /* Garantir que o conteúdo ocupe toda a altura do container */
+    text-align: center; /* Centralizar o texto */
+}
+
+.content-box-010 p {
+    color: white;
+    font-family: 'Junge', sans-serif;
+    font-size: 30px; /* Tamanho do texto do parágrafo */
+    margin-bottom: 10px;
+}
+
+.content-box-010 h1 {
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 95px; /* Tamanho do título */
+    margin-bottom: 20px;
+}
+
+.content-box-010 h2 {
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 45px; /* Tamanho do subtítulo */
+    margin-bottom: 20px; /* Espaçamento entre o h2 e o próximo item */
+}
+
+.content-box-010 button {
+    margin-top: 20px;
+    width: 502px; /* Largura do botão */
+    height: 87px; /* Altura do botão */
+    background: linear-gradient(to right, #1BE309, #0DB40D); /* Gradiente linear */
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'League Spartan', sans-serif; /* Fonte do texto */
+    font-size: 32px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    border-radius: 8px; /* Opcional: arredondar os cantos do botão */
+    text-align: center; /* Centralizar o texto */
+    padding: 10px; /* Espaçamento interno */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse */
+.content-box-010 button:hover {
+    transform: translateY(-5px); /* Move o botão para cima */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Sombra ao redor do botão */
+}
+
+.content-box-010 img {
+    margin-top: 20px;
+    max-width: 100%; /* Garantir que a imagem não exceda a área do retângulo */
+}
+
+.right-container-010 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+.list-item-010 {
+    display: flex;
+    align-items: center;
+    font-family: 'Junge', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px; /* Espaçamento entre os itens */
+    position: relative; /* Necessário para garantir que a linha seja posicionada corretamente */
+    padding-bottom: 10px; /* Espaçamento extra abaixo de cada item */
+}
+
+.list-item-010 img {
+    width: 19px; /* Ajustar o tamanho das imagens */
+    height: 18px;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.list-item-010 p {
+    flex-grow: 1; /* Faz o parágrafo ocupar o espaço restante */
+    margin: 0;
+}
+
+/* Linha separadora */
+.separator-line-010 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(#E87D23, #EDAB45); /* Gradiente linear */
+}
+
+.garantiaFAQ-011 {
+    background: linear-gradient(to right, #E35909, #EDAB45); /* Fundo gradiente */
+    padding: 50px;
+    min-height: 100vh; /* Ocupar toda a altura da tela */
+    display: flex; /* Para alinhar o conteúdo verticalmente se necessário */
+    flex-direction: column; /* Alinhamento vertical */
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+/* FAQ Header */
+.faq-header {
+    display: flex;
+    align-items: flex-start; /* Alinhamento ao topo */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Container para h1 e p */
+.faq-text-container {
+    display: flex;
+    width: 1077px; /* Largura total desejada */
+    height: 150px; /* Altura total desejada */
+    justify-content: space-between; /* Distribui espaço entre h1 e p */
+    align-items: center; /* Alinhamento vertical */
+}
+
+/* Estilo do título */
+.faq-title {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: #ffffff;
+    margin: 0;
+    margin-right: 85px; /* Espaçamento de 85px entre h1 e p */
+}
+
+.faq-title .junge {
+    font-family: 'Junge', sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+/* Estilo do parágrafo à direita */
+.faq-right-text {
+    font-family: 'Junge', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 1.5;
+    width: 710px;  /* Define a largura */
+    height: auto; /* Altura automática para acomodar o texto completo */
+    margin: 0;
+}
+
+/* Subtítulo PERGUNTAS FREQUENTES */
+.faq-subtitle {
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 40px 0;
+    margin-top: 93px;
+    margin-bottom: 93px;
+}
+
+/* Accordion Container */
+.accordion-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Accordion */
+.accordion {
+    background: linear-gradient(to right, #E35909, #EDAB45);
+    width: 528px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Permite que o conteúdo seja empilhado verticalmente */
+    padding: 15px; /* Padding no acordeão */
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s; /* Efeito suave na transição */
+}
+
+/* Estilo do título do acordeão */
+.accordion-header {
+    color: white;
+    font-family: 'League Spartan', sans-serif; /* Fonte do título */
+    font-size: 25px; /* Tamanho da fonte do título */
+    font-weight: 500; /* Peso semibold */
+    margin: 0; /* Remove margem */
+    display: flex; /* Flex para alinhar o conteúdo */
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* Imagem no cabeçalho do acordeão */
+.accordion-header img {
+    margin-right: 15px;
+}
+
+/* Estilo do parágrafo dentro do acordeão */
+.accordion-content {
+    max-height: 0; /* Inicia fechado */
+    overflow: hidden; /* Oculta o conteúdo */
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Transição suave para altura e padding */
+    background: transparent; /* Fundo transparente para o conteúdo */
+}
+
+/* Parágrafo do conteúdo do acordeão */
+.accordion-content p {
+    color: #ffffff;
+    margin: 0; /* Remove margem */
+    font-family: 'League Spartan', sans-serif; /* Fonte do parágrafo */
+    font-size: 20px; /* Tamanho da fonte do parágrafo */
+    font-weight: 500; /* Peso semibold */
+}
+
+/* Ativo - Mostrar conteúdo do acordeão */
+.accordion.active .accordion-content {
+    max-height: 200px; /* Define uma altura máxima ao expandir */
+    padding: 15px 0; /* Ajuste o padding para o conteúdo */
+    transition: max-height 0.5s ease, padding 0.5s ease; /* Transição mais suave ao expandir */
+}
+
+/* Ajustes no comportamento dos acordeões */
+.accordion.active {
+    background: linear-gradient(to right, #E35909, #EDAB45); /* Manter a cor do fundo */
+}
+
+.footer-012 {
+    width: 100%;
+}
+
+/* Estilo da primeira seção do footer */
+.footer-section-1-012 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 159px;
+    padding: 0 20px;
+    box-sizing: border-box; /* Para incluir padding na largura total */
+    background: linear-gradient(to right, #EDAB45, #E35909); /* Fundo degradê */
+}
+
+/* Estilo da logo */
+.footer-logo-012 {
+    width: 301px;
+    height: 128px;
+}
+
+/* Estilo para os links */
+.footer-links-012 {
+    display: flex;
+    gap: 20px; /* Espaçamento entre colunas */
+}
+
+.link-column-012 {
+    display: flex;
+    flex-direction: column; /* Para empilhar links verticalmente */
+}
+
+.link-column-012 a {
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
+    padding: 15px;
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove a decoração do link */
+    font-size: 20px; /* Tamanho da fonte dos links */
+    font-weight: normal; /* Peso regular */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+.link-column-012 a:hover {
+    color: #EDAB45; /* Tom mais escuro para o hover (ajuste conforme necessário) */
+}
+
+/* Estilo da imagem no footer */
+.footer-image-012 {
+    width: 389px;
+    height: 106px;
+}
+
+/* Estilo da segunda seção do footer */
+.footer-section-2-012 {
+    font-family: ROBOTO;
+    background-color: #1E1E1E;
+    color: white; /* Para garantir que o texto seja legível */
+    height: 159px;
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Para incluir padding na altura total */
+    text-align: center; /* Centraliza o texto */
+    display: flex; /* Para alinhar textos */
+    flex-direction: column; /* Alinha os textos verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    font-size: 15px;
+}
+
+
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1; /* Fica acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Adiciona scroll se necessário */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro e transparente */
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+}
+
+.modal-content h2 {
+    font-family: 'Roboto', sans-serif; /* Usando a mesma fonte */
+    font-size: 24px; /* Tamanho do título, ajuste conforme necessário */
+    font-weight: bold; /* Peso do título */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    color: #333; /* Cor do título */
+}
+
+.modal-content p {
+    font-family: 'Roboto', sans-serif; /* Usando a mesma fonte */
+    font-size: 16px; /* Tamanho do parágrafo */
+    color: #555; /* Cor do texto do parágrafo */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+}
+
+.modal-content {
+    background-color: var(--color-background);
+    margin: 15% auto; /* Margem para centralizar */
+    padding: 20px; /* Padding interno */
+    border: 1px solid #888; /* Borda */
+    border-radius: 15px; /* Bordas arredondadas */
+    width: 80%; /* Largura do modal */
+    max-width: 600px; /* Largura máxima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+.close {
+    color: #aaa; /* Cor do botão de fechar */
+    float: right; /* Posiciona no canto superior direito */
+    font-size: 28px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Cor do botão de fechar quando hover */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Cursor em forma de ponteiro */
+}
